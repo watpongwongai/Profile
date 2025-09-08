@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="เรซูเม่สองภาษา (ไทย–English) ของ วัฒพงศ์ วงค์อ้าย – Summary, Experience, Skills, Contact." />
+  <meta name="description" content="Resume (Bilingual Thai–English) of Watthaphong Wongai – Summary, Experience, Skills, Contact." />
   <title>Resume • วัฒพงศ์ วงค์อ้าย | Watthaphong Wongai (IT Office / IT Administrator)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -15,9 +15,15 @@
         extend: {
           fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
           colors: {
-            brand: { 50:'#eef7ff',100:'#d9edff',200:'#bfe1ff',300:'#95cffc',400:'#5bb4f7',500:'#2294f2',600:'#0e75cc',700:'#0a5da4',800:'#094e87',900:'#0b416e',950:'#072949' }
+            brand: {
+              50: '#f0f9ff', 100: '#e0f2fe', 200: '#bae6fd', 300: '#7dd3fc',
+              400: '#38bdf8', 500: '#0ea5e9', 600: '#0284c7', 700: '#0369a1',
+              800: '#075985', 900: '#0c4a6e'
+            }
           },
-          boxShadow: { soft: '0 10px 25px -10px rgba(0,0,0,0.25)' }
+          boxShadow: {
+            soft: '0 8px 20px -6px rgba(0,0,0,0.2)'
+          }
         }
       },
       darkMode: 'class'
@@ -28,287 +34,56 @@
     .lang.hidden{display:none}
   </style>
 </head>
-<body class="bg-white text-slate-800 dark:bg-slate-900 dark:text-slate-100">
-  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:bg-brand-600 focus:text-white focus:px-3 focus:py-2 focus:rounded-lg">ข้ามไปยังเนื้อหา</a>
-
+<body class="bg-white text-slate-800 dark:bg-slate-900 dark:text-slate-100 font-sans leading-relaxed">
   <!-- Navbar -->
-  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 dark:bg-slate-900/70 border-b border-slate-200/60 dark:border-slate-700/60">
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-700 shadow-sm">
     <nav class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
       <div class="flex items-center gap-3">
-        <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 text-white grid place-items-center shadow-soft">WW</div>
+        <div class="h-10 w-10 rounded-xl bg-gradient-to-br from-brand-400 to-brand-600 text-white grid place-items-center shadow-soft font-bold">WW</div>
         <span class="font-semibold tracking-tight">วัฒพงศ์ วงค์อ้าย • Watthaphong Wongai</span>
       </div>
 
-      <ul class="hidden md:flex items-center gap-6 text-sm">
-        <li><a class="hover:text-brand-600" href="#about">About/ข้อมูลย่อ</a></li>
-        <li><a class="hover:text-brand-600" href="#skills">Skills/ทักษะ</a></li>
-        <li><a class="hover:text-brand-600" href="#experience">Experience/ประสบการณ์</a></li>
-        <li><a class="hover:text-brand-600" href="#contact">Contact/ติดต่อ</a></li>
-      </ul>
-
-      <div class="hidden md:flex items-center gap-2">
+      <div class="flex items-center gap-2">
         <div class="no-print inline-flex rounded-xl border border-slate-300/70 dark:border-slate-700 overflow-hidden">
-          <button id="btnTH" class="px-3 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-800">🇹🇭 ไทย</button>
-          <button id="btnEN" class="px-3 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-800">🇬🇧 English</button>
+          <button id="btnTH" class="px-3 py-1.5 text-sm hover:bg-slate-100 dark:hover:bg-slate-800">🇹🇭 ไทย</button>
+          <button id="btnEN" class="px-3 py-1.5 text-sm hover:bg-slate-100 dark:hover:bg-slate-800">🇬🇧 English</button>
         </div>
-        <button onclick="window.print()" class="no-print inline-flex items-center gap-2 rounded-xl border border-slate-300/70 dark:border-slate-700 px-3 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800" title="Print/Save as PDF">PDF</button>
+        <button onclick="window.print()" class="no-print inline-flex items-center gap-2 rounded-xl border border-slate-300/70 dark:border-slate-700 px-3 py-1.5 text-sm hover:bg-slate-50 dark:hover:bg-slate-800">PDF</button>
       </div>
     </nav>
   </header>
 
-  <main id="main">
-    <!-- Hero / Header -->
-    <section class="relative isolate overflow-hidden">
-      <div class="absolute inset-0 -z-10 bg-gradient-to-b from-brand-50 to-white dark:from-slate-800/40 dark:to-slate-900"></div>
-      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <!-- TH -->
-          <div class="lang th">
-            <h1 class="mt-4 text-4xl/tight font-extrabold tracking-tight md:text-5xl">สวัสดีครับ ผม <span class="text-brand-600">วัฒพงศ์ วงค์อ้าย</span> — <span class="underline decoration-wavy decoration-brand-400 underline-offset-4">IT Office / IT Administrator</span></h1>
-            <p class="mt-4 text-slate-600 dark:text-slate-300 max-w-prose">มีประสบการณ์ทำงานต่างประเทศ (ลาว) ดูแลระบบ IT ภายในองค์กร ครอบคลุมเครือข่าย เซิร์ฟเวอร์ Firewall (FortiGate) NAS CCTV VM และ BackupCenter พร้อมซัพพอร์ตผู้ใช้งานและแก้ไขปัญหา Hardware/Software</p>
-            <div class="mt-6 flex flex-wrap gap-3 text-sm text-slate-600 dark:text-slate-300">
-              <span>อีเมล: bos54160@gmail.com</span>
-              <span>โทร: 098-796-8893</span>
-              <span>ที่ตั้ง: ลำพูน, ไทย (เคยทำงานที่ลาว)</span>
-            </div>
-          </div>
-          <!-- EN -->
-          <div class="lang en hidden">
-            <h1 class="mt-4 text-4xl/tight font-extrabold tracking-tight md:text-5xl">Hello, I’m <span class="text-brand-600">Watthaphong Wongai</span> — <span class="underline decoration-wavy decoration-brand-400 underline-offset-4">IT Office / IT Administrator</span></h1>
-            <p class="mt-4 text-slate-600 dark:text-slate-300 max-w-prose">Experienced IT Office / IT Administrator with international experience in Laos. Skilled in Network, Server, Firewall (FortiGate), NAS, CCTV, Virtual Machines, and BackupCenter. Proficient in end-user support and Hardware/Software troubleshooting.</p>
-            <div class="mt-6 flex flex-wrap gap-3 text-sm text-slate-600 dark:text-slate-300">
-              <span>Email: bos54160@gmail.com</span>
-              <span>Phone: 098-796-8893</span>
-              <span>Location: Lamphun, Thailand (worked in Laos)</span>
-            </div>
-          </div>
+  <!-- Hero -->
+  <section class="relative isolate overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-brand-50 to-white dark:from-slate-800/40 dark:to-slate-900"></div>
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <!-- TH -->
+        <div class="lang th">
+          <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">สวัสดีครับ ผม <span class="text-brand-600">วัฒพงศ์ วงค์อ้าย</span><br><span class="underline decoration-wavy decoration-brand-400 underline-offset-4">IT Office / IT Administrator</span></h1>
+          <p class="mt-4 text-slate-600 dark:text-slate-300">มีประสบการณ์ทำงานต่างประเทศ (ลาว) ดูแลระบบ IT ครอบคลุมเครือข่าย เซิร์ฟเวอร์ Firewall (FortiGate) NAS CCTV VM และ BackupCenter พร้อมซัพพอร์ตผู้ใช้งานและแก้ไขปัญหา Hardware/Software</p>
         </div>
-        <div class="relative">
-          <div class="aspect-square rounded-3xl bg-gradient-to-br from-brand-600/20 to-brand-800/20 p-1">
-            <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=1200&auto=format&fit=crop" alt="Profile" class="h-full w-full object-cover rounded-[22px]"/>
-          </div>
+        <!-- EN -->
+        <div class="lang en hidden">
+          <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">Hello, I’m <span class="text-brand-600">Watthaphong Wongai</span><br><span class="underline decoration-wavy decoration-brand-400 underline-offset-4">IT Office / IT Administrator</span></h1>
+          <p class="mt-4 text-slate-600 dark:text-slate-300">Experienced IT Office / IT Administrator with international experience in Laos. Skilled in Network, Server, Firewall (FortiGate), NAS, CCTV, Virtual Machines, and BackupCenter. Proficient in user support and troubleshooting Hardware/Software issues.</p>
+        </div>
+        <div class="mt-6 flex flex-col gap-2 text-sm text-slate-600 dark:text-slate-300">
+          <span>📧 bos54160@gmail.com</span>
+          <span>📱 098-796-8893</span>
+          <span>📍 Lamphun, Thailand (worked in Laos)</span>
         </div>
       </div>
-    </section>
-
-    <!-- About / Summary -->
-    <section id="about" class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
-      <div class="grid md:grid-cols-3 gap-10">
-        <div>
-          <h2 class="text-2xl font-bold">About / ข้อมูลย่อ</h2>
-          <p class="mt-2 text-slate-500">Profile Summary</p>
-        </div>
-        <div class="md:col-span-2 space-y-4 leading-relaxed">
-          <p class="lang th">มีประสบการณ์ <span class="font-medium">IT Office / IT Administrator</span> ดูแลโครงสร้างพื้นฐาน IT ซัพพอร์ตผู้ใช้ และแก้ปัญหาเชิงเทคนิค มีประสบการณ์ทำงานต่างประเทศ (ลาว)</p>
-          <p class="lang en hidden">IT professional with hands-on experience as <span class="font-medium">IT Office / IT Administrator</span>. Strong background in infrastructure management, user support, and troubleshooting. International exposure working in Laos.</p>
-          <ul class="grid sm:grid-cols-2 gap-2 text-sm">
-            <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-500"></span><span class="lang th">พร้อมย้ายที่ทำงานได้</span><span class="lang en hidden">Open to relocation</span></li>
-            <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-500"></span><span class="lang th">ภาษา: ไทย, ลาว (ดีมาก) / อังกฤษ (พื้นฐาน)</span><span class="lang en hidden">Languages: Thai, Lao (fluent), English (basic)</span></li>
-          </ul>
+      <div class="relative">
+        <div class="aspect-square rounded-3xl bg-gradient-to-br from-brand-400/20 to-brand-700/20 p-1">
+          <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=1200&auto=format&fit=crop" alt="Profile" class="h-full w-full object-cover rounded-[22px] shadow-lg"/>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Skills -->
-    <section id="skills" class="bg-slate-50 dark:bg-slate-800/40">
-      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
-        <div class="flex items-end justify-between flex-wrap gap-4">
-          <h2 class="text-2xl font-bold">Skills / ทักษะ</h2>
-        </div>
-        <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="rounded-2xl border border-slate-200 dark:border-slate-700 p-5 bg-white dark:bg-slate-900">
-            <h3 class="font-semibold lang th">เครือข่าย (Networking)</h3>
-            <h3 class="font-semibold lang en hidden">Networking</h3>
-            <ul class="mt-3 space-y-2 text-sm text-slate-600 dark:text-slate-300">
-              <li class="lang th">LAN / Wi‑Fi, IP, VLAN เบื้องต้น</li>
-              <li class="lang en hidden">LAN / Wi‑Fi, IP, VLAN</li>
-              <li class="lang th">FortiGate Firewall (Policy / NAT)</li>
-              <li class="lang en hidden">FortiGate Firewall (Policy / NAT)</li>
-              <li class="lang th">มอนิเตอร์และแก้ปัญหาเบื้องต้น</li>
-              <li class="lang en hidden">Monitoring & troubleshooting</li>
-            </ul>
-          </div>
-          <div class="rounded-2xl border border-slate-200 dark:border-slate-700 p-5 bg-white dark:bg-slate-900">
-            <h3 class="font-semibold lang th">เซิร์ฟเวอร์ & สตอเรจ</h3>
-            <h3 class="font-semibold lang en hidden">Servers & Storage</h3>
-            <ul class="mt-3 space-y-2 text-sm text-slate-600 dark:text-slate-300">
-              <li class="lang th">Windows / VM (vSphere)</li>
-              <li class="lang en hidden">Windows Server / VMware vSphere</li>
-              <li class="lang th">NAS (สำรอง/กู้คืนข้อมูล)</li>
-              <li class="lang en hidden">NAS (backup/restore)</li>
-              <li class="lang th">BackupCenter</li>
-              <li class="lang en hidden">BackupCenter</li>
-            </ul>
-          </div>
-          <div class="rounded-2xl border border-slate-200 dark:border-slate-700 p-5 bg-white dark:bg-slate-900">
-            <h3 class="font-semibold lang th">ความปลอดภัย (Security)</h3>
-            <h3 class="font-semibold lang en hidden">Security</h3>
-            <ul class="mt-3 space-y-2 text-sm text-slate-600 dark:text-slate-300">
-              <li class="lang th">CCTV, การกำหนดสิทธิ์ผู้ใช้</li>
-              <li class="lang en hidden">CCTV & user access</li>
-              <li class="lang th">การป้องกันไวรัส/มัลแวร์</li>
-              <li class="lang en hidden">Antivirus / Malware prevention</li>
-              <li class="lang th">แนวทางสำรองข้อมูล 3‑2‑1</li>
-              <li class="lang en hidden">Data backup (3‑2‑1 strategy)</li>
-            </ul>
-          </div>
-          <div class="rounded-2xl border border-slate-200 dark:border-slate-700 p-5 bg-white dark:bg-slate-900">
-            <h3 class="font-semibold lang th">การซัพพอร์ตผู้ใช้</h3>
-            <h3 class="font-semibold lang en hidden">User Support</h3>
-            <ul class="mt-3 space-y-2 text-sm text-slate-600 dark:text-slate-300">
-              <li class="lang th">แก้ปัญหา Hardware/Software</li>
-              <li class="lang en hidden">Hardware/Software troubleshooting</li>
-              <li class="lang th">Windows / Office 365 / Email / Printer</li>
-              <li class="lang en hidden">Windows / Office 365 / Email / Printer</li>
-              <li class="lang th">จัดทำคู่มือ/รายงาน IT</li>
-              <li class="lang en hidden">Documentation & IT reporting</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="bg-slate-50 dark:bg-slate-800/40">
-      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
-        <h2 class="text-2xl font-bold">Experience / ประสบการณ์</h2>
-        <div class="mt-8 grid lg:grid-cols-2 gap-6">
-          <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-6">
-            <header class="flex items-center justify-between gap-4">
-              <div>
-                <h3 class="font-semibold lang th">IT Office • บริษัท โตเกียว คอยล์ เอ็นจิเนียริ่ง (ประเทศลาว) จำกัด</h3>
-                <h3 class="font-semibold lang en hidden">IT Office • Tokyo Coil Engineering (Laos) Co., Ltd.</h3>
-                <p class="text-sm text-slate-500 lang th">เม.ย. 2566 – มี.ค. 2567 · ลาว</p>
-                <p class="text-sm text-slate-500 lang en hidden">Apr 2023 – Mar 2024 · Laos</p>
-              </div>
-              <span class="px-2 py-1 text-xs rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-200">Full‑time</span>
-            </header>
-            <ul class="mt-4 list-disc pl-5 space-y-2 text-sm text-slate-700 dark:text-slate-300">
-              <li class="lang th">ดูแลระบบภายใน: CCTV, NAS, FortiGate, Network (LAN/Wi‑Fi)</li>
-              <li class="lang en hidden">Maintained IT systems: CCTV, NAS, FortiGate, Network (LAN/Wi‑Fi)</li>
-              <li class="lang th">Helpdesk: Hardware/Software, Windows/Office 365, Printer/Email</li>
-              <li class="lang en hidden">Helpdesk: Hardware/Software, Windows/Office 365, Printer/Email</li>
-              <li class="lang th">ดูแล VM / BackupCenter ตรวจสอบแบ็กอัปและกู้คืนข้อมูล</li>
-              <li class="lang en hidden">Managed VM / BackupCenter, monitored backups and restores</li>
-              <li class="lang th">จัดทำคู่มือ/รายงานสถานะ IT และประสานงานซัพพลายเออร์</li>
-              <li class="lang en hidden">Prepared IT documentation and coordinated with vendors</li>
-            </ul>
-          </article>
-
-          <article class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-6">
-            <header class="flex items-center justify-between gap-4">
-              <div>
-                <h3 class="font-semibold lang th">ผู้ช่วยช่าง IT • บริษัท ฟู้จิซะ อิเล็กทรอนิกส์ ลำพูน จำกัด</h3>
-                <h3 class="font-semibold lang en hidden">IT Assistant • Fujisa Electronics Lamphun Co., Ltd.</h3>
-                <p class="text-sm text-slate-500 lang th">พ.ค. 2567 – ส.ค. 2567 · ลำพูน, ไทย</p>
-                <p class="text-sm text-slate-500 lang en hidden">May 2024 – Aug 2024 · Lamphun, Thailand</p>
-              </div>
-              <span class="px-2 py-1 text-xs rounded-full bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-200">Internship/Contract</span>
-            </header>
-            <ul class="mt-4 list-disc pl-5 space-y-2 text-sm text-slate-700 dark:text-slate-300">
-              <li class="lang th">ซ่อมบำรุงคอมพิวเตอร์/ติดตั้ง Windows และ Microsoft Office</li>
-              <li class="lang en hidden">Maintained computers, installed Windows and Microsoft Office</li>
-              <li class="lang th">แก้ปัญหาเครือข่ายและซัพพอร์ตผู้ใช้งาน</li>
-              <li class="lang en hidden">Troubleshot networking issues and supported users</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="bg-slate-50 dark:bg-slate-800/40">
-      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
-        <div class="grid md:grid-cols-2 gap-10 items-start">
-          <div>
-            <h2 class="text-2xl font-bold">Contact / ติดต่อ</h2>
-            <div class="mt-6 space-y-3 text-sm">
-              <p><span class="font-medium lang th">อีเมล:</span><span class="font-medium lang en hidden">Email:</span> bos54160@gmail.com</p>
-              <p><span class="font-medium lang th">โทรศัพท์:</span><span class="font-medium lang en hidden">Phone:</span> 098-796-8893</p>
-              <p><span class="font-medium lang th">ที่ตั้ง:</span><span class="font-medium lang en hidden">Location:</span> ลำพูน, ไทย • Lamphun, Thailand</p>
-            </div>
-          </div>
-          <form class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-6 space-y-4">
-            <div>
-              <label class="block text-sm mb-1 lang th" for="name">ชื่อ</label>
-              <label class="block text-sm mb-1 lang en hidden" for="name">Name</label>
-              <input id="name" type="text" class="w-full rounded-xl border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:ring-brand-500 focus:border-brand-500" placeholder="Your name / ชื่อของคุณ" required />
-            </div>
-            <div>
-              <label class="block text-sm mb-1 lang th" for="email">อีเมล</label>
-              <label class="block text-sm mb-1 lang en hidden" for="email">Email</label>
-              <input id="email" type="email" class="w-full rounded-xl border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:ring-brand-500 focus:border-brand-500" placeholder="you@example.com" required />
-            </div>
-            <div>
-              <label class="block text-sm mb-1 lang th" for="message">ข้อความ</label>
-              <label class="block text-sm mb-1 lang en hidden" for="message">Message</label>
-              <textarea id="message" rows="4" class="w-full rounded-xl border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:ring-brand-500 focus:border-brand-500" placeholder="บอกผมเกี่ยวกับงานที่ต้องการให้ช่วย / Tell me about your project" required></textarea>
-            </div>
-            <button type="submit" class="no-print inline-flex items-center gap-2 rounded-xl bg-brand-600 px-4 py-2.5 text-white shadow-soft hover:bg-brand-700 lang th">ส่งข้อความ</button>
-            <button type="submit" class="no-print inline-flex items-center gap-2 rounded-xl bg-brand-600 px-4 py-2.5 text-white shadow-soft hover:bg-brand-700 lang en hidden">Send</button>
-            <p id="formStatus" class="text-sm"></p>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="border-t border-slate-200 dark:border-slate-800">
-      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p class="text-sm text-slate-500 lang th">© <span id="year"></span> วัฒพงศ์ วงค์อ้าย. สงวนลิขสิทธิ์</p>
-        <p class="text-sm text-slate-500 lang en hidden">© <span id="year"></span> Watthaphong Wongai. All rights reserved.</p>
-      </div>
-    </footer>
-
-    <button id="backToTop" class="no-print fixed bottom-6 right-6 hidden rounded-full p-3 shadow-soft bg-white border border-slate-200 dark:bg-slate-900 dark:border-slate-700" aria-label="Back to top">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75 12 8.25l7.5 7.5"/></svg>
-    </button>
-  </main>
-
-  <script>
-    const root = document.documentElement;
-    const storedTheme = localStorage.getItem('theme');
-    if (storedTheme === 'dark' || (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      root.classList.add('dark');
-    }
-
-    // Language toggle with persistence
-    const btnTH = document.getElementById('btnTH');
-    const btnEN = document.getElementById('btnEN');
-    function setLanguage(lang){
-      document.querySelectorAll('.lang').forEach(el=>el.classList.add('hidden'));
-      document.querySelectorAll('.'+lang).forEach(el=>el.classList.remove('hidden'));
-      localStorage.setItem('lang', lang);
-      document.documentElement.setAttribute('lang', lang==='th'?'th':'en');
-      // Active styles
-      btnTH.classList.toggle('bg-slate-100', lang==='th');
-      btnEN.classList.toggle('bg-slate-100', lang==='en');
-    }
-    btnTH?.addEventListener('click', ()=>setLanguage('th'));
-    btnEN?.addEventListener('click', ()=>setLanguage('en'));
-    setLanguage(localStorage.getItem('lang')||'th');
-
-    // Back to top
-    const backToTop = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 600) backToTop.classList.remove('hidden');
-      else backToTop.classList.add('hidden');
-    });
-    backToTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-
-    // Footer year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Fake form submit
-    const form = document.querySelector('#contact form');
-    const formStatus = document.getElementById('formStatus');
-    form?.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const lang = localStorage.getItem('lang')||'th';
-      formStatus.textContent = lang==='th' ? 'ขอบคุณครับ! ผมจะติดต่อกลับโดยเร็ว' : 'Thanks! I will get back to you soon.';
-      form.reset();
-      setTimeout(() => (formStatus.textContent = ''), 4000);
-    });
-  </script>
-</body>
-</html>
+  <!-- About -->
+  <section id="about" class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
+    <h2 class="text-3xl font-bold mb-6 border-b pb-2 border-brand-200">About / ข้อมูลย่อ</h2>
+    <p class="lang th">มีประสบการณ์ด้าน <strong>IT Office / IT Administrator</strong> ดูแลโครงสร้างพื้นฐาน IT, ซัพพอร์ตผู้ใช้ และแก้ปัญหาเชิงเทคนิค เคยทำงานต่างประเทศ (ลาว)</p>
+    <p class="lang
